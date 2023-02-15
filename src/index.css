@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:rgb(244 241 222);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.background{
+  background: rgb(129 178 154);
+  width: 25rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+}
+
+.display{
+  background: rgb(62, 68, 68);
+  color: white;
+  height: 6rem;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+
+}
+
+.button{
+  background: #417070;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.5rem;
+
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.button:hover{
+  background: #4170706f;
+
+}
+
+.zero{
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.operatio{
+  background: rgb(197, 136, 23);
+  color:rgb(255, 255, 255);
+}
+
+.operatio:focus{
+  background: rgb(255, 255, 255);
+  color: rgb(197, 136, 23);
+}
+
+.operatio:hover{
+  background: rgba(197, 136, 23, 0.353);
+  color:rgb(255, 255, 255);
+}
+
+
